@@ -1,0 +1,38 @@
+# Ignore virtual environments
+venv/
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and temporary files
+*.log
+logs/
+*.tmp
+*.temp
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore Streamlit static cache
+.streamlit/config.toml
+
+# Ignore compiled binaries
+*.exe
+*.out
+*.o
+
+# Ignore Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Ignore unnecessary hidden files
+*.swp
+*.swo
