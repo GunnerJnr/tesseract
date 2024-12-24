@@ -75,7 +75,7 @@ if uploaded_file:
     # New Sidebar Cropper Enhancements
     st.sidebar.header("Cropping Options")
     realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
-    box_color = st.sidebar.color_picker(label="Crop Box Color", value='#0000FF')
+    box_colour = st.sidebar.color_picker(label="Crop Box Colour", value='#0000FF')
     aspect_choice = st.sidebar.radio(
         label="Aspect Ratio",
         options=["1:1", "16:9", "4:3", "2:3", "Free"],
@@ -118,10 +118,10 @@ if uploaded_file:
         cropped_image = st_cropper(
             processed_image,
             realtime_update=realtime_update,
-            box_color=box_color,  # Dynamically update crop box color
+            box_colour=box_colour,  # Dynamically update crop box colour
             aspect_ratio=aspect_ratio,  # Dynamically update aspect ratio
             return_type='image',
-            key=f"cropper-{box_color}",  # Ensure a unique key for box color updates
+            key=f"cropper-{box_colour}",  # Ensure a unique key for box colour updates
         )
 
     with col_preview:
