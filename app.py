@@ -118,7 +118,7 @@ if uploaded_file:
         cropped_image = st_cropper(
             processed_image,
             realtime_update=realtime_update,
-            box_colour=box_colour,  # Dynamically update crop box colour
+            box_color=box_colour,  # Dynamically update crop box colour
             aspect_ratio=aspect_ratio,  # Dynamically update aspect ratio
             return_type='image',
             key=f"cropper-{box_colour}",  # Ensure a unique key for box colour updates
